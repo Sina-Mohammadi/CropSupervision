@@ -33,12 +33,13 @@ python main.py --out_supervision 'IOU' --mid_supervision 'SupCon' --site 'A' --v
 
 *site*: You can select either of 'A','B','C','D'.
 
-*validation_fold*: An integer between 1 and 5 used to select the validation fold. Train the model using all five data splits to obtain five sets of weights for the model (obtained by perfroming early stopping). Then average the five softmax outputs to obtain the final prediction probabilities. 
+*validation_fold*: An integer between 1 and 5 used to select the validation fold. Train the model using all five data splits to obtain five sets of weights for the model (obtained by perfroming early stopping). 
 
 *save_dir*: Set the path for saving the weights.
 
 *data_dir*: Path where the data of the four sites are located.
 
+3- Take the average of the softmax outputs of the five obtained weights for the model to obtain the final prediction probabilities. The test data will be uploaded soon. 
 
 ## Citation
 ```
