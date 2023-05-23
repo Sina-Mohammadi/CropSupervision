@@ -21,7 +21,7 @@ To learn more discriminative feature representations to detect crop types and re
 
 1- Download the preprocessed training data for the four sites from google drive using the following links: [Site_A](https://drive.google.com/file/d/1fhoFewOoLPSWWmX5dOeme2rlZJXyyC7A/view?usp=sharing) , [Site_B](https://drive.google.com/file/d/1fHerhZHxV0w1cTU6PO37Q2E_RITV6Zwc/view?usp=sharing)  , [Site_C](https://drive.google.com/file/d/1Cc71iW4te0pMjAmMO2um2iSoQUOtrzs6/view?usp=sharing)  , [Site_D](https://drive.google.com/file/d/14WStPwEAuea9X-WnjHIq51L8iyc41Bfu/view?usp=sharing) - Then put them in data folder.
 
-2. Train the model with the loss function(s) of your choice using the follwing code:
+2- Train the model with the loss function(s) of your choice using the follwing code:
 
 ```
 python main.py --out_supervision 'IOU' --mid_supervision 'SupCon' --site 'A' --validation_fold 5 --data_dir 'data' --save_dir 'save'
@@ -34,7 +34,11 @@ python main.py --out_supervision 'IOU' --mid_supervision 'SupCon' --site 'A' --v
 *site*: You can select either of 'A','B','C','D'.
 
 *validation_fold*: An integer between 1 and 5 used to select the validation fold. Train the model using all five data splits to obtain five sets of weights for the model (obtained by perfroming early stopping). Then average the five softmax outputs to obtain the final prediction probabilities. 
-*save_dir*, loss_function, and validation_fold, you can set these training configurations: *batch_size, learning_rate, epochs.*
+
+*save_dir*: Set the path for saving the weights.
+
+*data_dir*: Path where the data of the four sites are located.
+
 
 ## Citation
 ```
