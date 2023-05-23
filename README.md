@@ -27,17 +27,17 @@ To learn more discriminative feature representations to detect crop types and re
 python main.py --out_supervision 'IOU' --mid_supervision 'SupCon' --site 'A' --validation_fold 5 --data_dir 'data' --save_dir 'save'
 ```
 
-*out_supervision*: You can select either of 'IOU', 'F1', or 'Cross-entropy'.
+- *out_supervision*: You can select either of 'IOU', 'F1', or 'Cross-entropy'.
 
-*mid_supervision*: You can select either of 'SupCon','Cross-entropy','off'.
+- *mid_supervision*: You can select either of 'SupCon','Cross-entropy','off'.
 
-*site*: You can select either of 'A','B','C','D'.
+- *site*: You can select either of 'A','B','C','D'.
 
-*validation_fold*: An integer between 1 and 5 used to select the validation fold. Train the model using all five data splits to obtain five sets of weights for the model (obtained by perfroming early stopping). 
+- *validation_fold*: An integer between 1 and 5 used to select the validation fold. Train the model using all five data splits to obtain five sets of weights for the model (obtained by perfroming early stopping). 
 
-*save_dir*: Set the path for saving the weights.
+- *save_dir*: Set the path for saving the weights.
 
-*data_dir*: Path where the data of the four sites are located.
+- *data_dir*: Path where the data of the four sites are located.
 
 3- Take the average of the softmax outputs of the five obtained weights for the model to obtain the final prediction probabilities. The test data will be uploaded soon. 
 
