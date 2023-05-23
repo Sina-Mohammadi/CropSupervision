@@ -1,5 +1,5 @@
 # Improvement in crop mapping from satellite image time series by effectively supervising deep neural networks
-Implementation code for our paper "Improvement in crop mapping from satellite image time series by effectively supervising deep neural networks"
+The official implementation code for our paper "Improvement in crop mapping from satellite image time series by effectively supervising deep neural networks"
 
 
 Our paper has been accepted to ISPRS Journal of Photogrammetry and Remote Sensing and is publicly available at: [ScienceDirect](https://www.sciencedirect.com/science/article/pii/S0924271623000679
@@ -21,10 +21,13 @@ In addition to *data_dir*, *save_dir*, loss_function, and validation_fold, you c
 
 ## Citation
 ```
-@article{mohammadi20213d,
-  title={3D Fully Convolutional Neural Networks with Intersection Over Union Loss for Crop Mapping from Multi-Temporal Satellite Images},
+@article{mohammadi2023improvement,
+  title={Improvement in crop mapping from satellite image time series by effectively supervising deep neural networks},
   author={Mohammadi, Sina and Belgiu, Mariana and Stein, Alfred},
-  journal={arXiv preprint arXiv:2102.07280},
-  year={2021}
+  journal={ISPRS Journal of Photogrammetry and Remote Sensing},
+  volume={198},
+  pages={272--283},
+  year={2023},
+  publisher={Elsevier}
 }
 ```
