@@ -29,7 +29,7 @@ python main.py --out_supervision 'IOU' --mid_supervision 'SupCon' --site 'A' --v
 
 - *out_supervision*: You can select either of 'IOU', 'F1', or 'Cross-entropy'.
 
-- *mid_supervision*: You can select either of 'SupCon','Cross-entropy','off'.
+- *mid_supervision*: You can select either of 'SupCon','Cross-entropy', or'off' (i.e. No middle supervision - Only output supervision).
 
 - *site*: You can select either of 'A','B','C','D'.
 
