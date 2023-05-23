@@ -28,8 +28,11 @@ python main.py --out_supervision 'IOU' --mid_supervision 'SupCon' --site 'A' --v
 ```
 
 *out_supervision*: You can select either of 'IOU', 'F1', or 'Cross-entropy'.
+
 *mid_supervision*: You can select either of 'SupCon','Cross-entropy','off'.
+
 *site*: You can select either of 'A','B','C','D'.
+
 *validation_fold*: An integer between 1 and 5 used to select the validation fold. Train the model using all five data splits to obtain five sets of weights for the model (obtained by perfroming early stopping). Then average the five softmax outputs to obtain the final prediction probabilities. 
 *save_dir*, loss_function, and validation_fold, you can set these training configurations: *batch_size, learning_rate, epochs.*
 
