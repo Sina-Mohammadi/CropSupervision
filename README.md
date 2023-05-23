@@ -8,7 +8,7 @@ Our paper has been accepted to ISPRS Journal of Photogrammetry and Remote Sensin
 ##Our Method
 To learn more discriminative feature representations to detect crop types and reveal the importance of proper supervision of deep neural networks in improving performance, we propose to supervise intermediate layers of a designed 3D Fully Convolutional Neural Network (FCN) by employing two middle supervision methods: Cross-entropy loss Middle Supervision (CE-MidS) and a novel middle supervision method, namely Supervised Contrastive loss Middle Supervision (SupCon-MidS). SupCon-MidS pulls together features belonging to the same class in embedding space, while pushing apart features from different classes. We demonstrate that SupCon-MidS enhances feature discrimination and clustering throughout the network, thereby improving the network performance. In addition, we employ two output supervision methods, namely F1 loss and Intersection Over Union (IOU) loss, which outperfrom the widely used cross-entropy loss.
 
-![image](https://github.com/Sina-Mohammadi/DFNet/blob/master/figures/Framework.png)
+![image](https://github.com/Sina-Mohammadi/CropSupervision/blob/main/fig/framework.jpg)
 
 
 
