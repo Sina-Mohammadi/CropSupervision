@@ -77,10 +77,12 @@ if __name__ == "__main__":
     class custom_callback(callbacks.Callback):
         def on_epoch_end(self, epoch, logs=None):
             current = logs.get(monitor_name)
-            if np.greater(current, 0.70):
+            if np.greater(current, 0.96):
                 self.model.stop_training = True   
 
     check_point = callbacks.ModelCheckpoint('./save/'+cfg.site+'/OutS('+cfg.out_supervision+')-MidS('+cfg.mid_supervision+')/ValFold('+str(cfg.validation_fold)+').hdf5',monitor='val_'+monitor_name, verbose=1)                
    
     model.fit_generator(train_data, steps_per_epoch=int(np.ceil(len(train_labels))), epochs=200, verbose=1, callbacks=custom_callback(),shuffle=True)
-    model.fit_generator(train_data, steps_per_epoch=int(np.ceil(len(train_labels))), epochs=200, verbose=1, callbacks=check_point, validation_data=val_data, validation_steps=int(np.ceil(len(val_labels))),shuffle=True)    
+    model.fit_generator(train_data, steps_per_epoch=int(np.ceil(len(train_labels))), epochs=200, verbose=1, callbacks=check_point, validation_data=val_data, validation_steps=int(np.ceil(len(val_labels))),shuffle=True)  
+    
+    
