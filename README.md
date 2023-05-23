@@ -39,7 +39,7 @@ python main.py --out_supervision 'IOU' --mid_supervision 'SupCon' --site 'A' --v
 
 - *data_dir*: Path where the data of the four sites are located.
 
-3- Take the average of the softmax outputs of the five obtained weights for the model to obtain the final prediction probabilities. The test data will be uploaded soon. 
+3- Take the average of the softmax outputs of the five obtained weights for the model using the test data to obtain the final prediction probabilities. The test data will be uploaded soon. 
 
 ## Citation
 ```
